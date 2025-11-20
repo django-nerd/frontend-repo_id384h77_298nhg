@@ -23,7 +23,7 @@ export default function UseCases() {
         </div>
 
         <div className="text-center mt-10">
-          <a href="#download" className="inline-flex items-center justify-center px-6 py-3 rounded-xl font-semibold bg-blue-600 hover:bg-blue-700 text-white transition-colors">Join the Mesh Network</a>
+          <a href="/download" className="inline-flex items-center justify-center px-6 py-3 rounded-xl font-semibold bg-blue-600 hover:bg-blue-700 text-white transition-colors">Join the Mesh Network</a>
         </div>
       </div>
     </section>

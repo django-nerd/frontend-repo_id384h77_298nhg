@@ -22,7 +22,7 @@ export default function Comparison() {
             </thead>
             <tbody>
               {rows.map((r) => (
-                <tr key={r.feature} className="">
+                <tr key={r.feature}>
                   <td className="bg-white/5 text-slate-200 px-4 py-3 rounded-l-xl border border-white/10">{r.feature}</td>
                   <td className="bg-white/5 text-white px-4 py-3 border-t border-b border-white/10">{r.bitwap}</td>
                   <td className="bg-white/5 text-slate-300 px-4 py-3 rounded-r-xl border border-white/10">{r.trad}</td>

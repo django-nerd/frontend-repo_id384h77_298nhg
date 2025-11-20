@@ -1,4 +1,5 @@
 import { useEffect, useMemo } from 'react'
+import { Share2, ShieldCheck, Smartphone, Zap, Globe2, LocateFixed } from 'lucide-react'
 
 function useDownloadCta() {
   const info = useMemo(() => {
@@ -73,7 +74,7 @@ export default function Hero() {
                 href={cta.href}
                 className={`inline-flex items-center justify-center px-5 py-3 rounded-xl font-semibold text-white transition-colors ${cta.color}`}
               >
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-5 h-5 mr-2"><path d="M17.5 6.5c-1.2 1.2-2.6 1-3.3.9-.2 0-.3-.1-.4-.1-.1-.1-.3-.2-.4-.3-.7-.7-.8-1.7-.3-3C14.5 3 15.8 2.1 17 2c.2 1.3-.3 2.6-1.1 3.5l-.1.1c-.1.1-.2.2-.3.3zM21 16.6c-.3.8-.6 1.5-1 2.1-.5.7-1 1.4-1.7 2-.9.8-1.9 1.3-3 1.3-1.1 0-1.6-.5-2.7-.5s-1.5.5-2.6.5-2.1-.6-3-1.4c-1.7-1.5-3-4.1-3-6.6 0-1.9.6-3.6 1.7-4.9 1-1.2 2.3-1.9 3.7-1.9 1.1 0 1.9.6 2.5.6.6 0 1.6-.7 2.8-.6 1.3.1 2.2.7 2.8 1.6-2.5 1.4-2.1 4.9.4 5.9-.7 1.9-1.6 3.2-3 4.2 1.3 0 2.6-.7 3.7-1.9.7-.7 1.2-1.5 1.7-2.4.4-.7.8-1.5 1.2-2.3.1.1-.2 1.3-.5 2.3z"/></svg>
+                <Smartphone className="w-5 h-5 mr-2" aria-hidden />
                 {cta.label}
               </a>
               <button
@@ -86,12 +87,12 @@ export default function Hero() {
             <p className="mt-3 text-xs text-slate-400">{cta.note}</p>
 
             <ul className="mt-8 grid grid-cols-2 sm:grid-cols-3 gap-3 text-sm text-slate-300">
-              <li className="flex items-center gap-2"><span className="text-green-400">🔗</span> Mesh networking</li>
-              <li className="flex items-center gap-2"><span className="text-purple-400">🔒</span> End‑to‑end encrypted</li>
-              <li className="flex items-center gap-2"><span className="text-blue-400">📱</span> Hybrid connectivity</li>
-              <li className="flex items-center gap-2"><span className="text-yellow-400">⚡</span> Real‑time</li>
-              <li className="flex items-center gap-2"><span className="text-emerald-400">🌍</span> Offline‑first</li>
-              <li className="flex items-center gap-2"><span className="text-pink-400">📍</span> GPS distance</li>
+              <li className="flex items-center gap-2"><Share2 className="w-4 h-4 text-green-400" aria-hidden /> Mesh networking</li>
+              <li className="flex items-center gap-2"><ShieldCheck className="w-4 h-4 text-purple-400" aria-hidden /> End‑to‑end encrypted</li>
+              <li className="flex items-center gap-2"><Smartphone className="w-4 h-4 text-blue-400" aria-hidden /> Hybrid connectivity</li>
+              <li className="flex items-center gap-2"><Zap className="w-4 h-4 text-yellow-400" aria-hidden /> Real‑time</li>
+              <li className="flex items-center gap-2"><Globe2 className="w-4 h-4 text-emerald-400" aria-hidden /> Offline‑first</li>
+              <li className="flex items-center gap-2"><LocateFixed className="w-4 h-4 text-pink-400" aria-hidden /> GPS distance</li>
             </ul>
           </div>
 

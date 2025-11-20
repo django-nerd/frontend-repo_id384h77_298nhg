@@ -1,3 +1,5 @@
+import { Shield } from 'lucide-react'
+
 export default function Privacy() {
   const points = [
     'Your conversations, truly private',
@@ -17,7 +19,7 @@ export default function Privacy() {
         <ul className="mt-8 grid sm:grid-cols-2 gap-4">
           {points.map((p) => (
             <li key={p} className="flex items-center gap-3 rounded-xl border border-white/10 bg-white/5 p-4">
-              <span className="text-2xl">🔒</span>
+              <Shield className="w-5 h-5 text-white/90" aria-hidden />
               <span className="text-slate-200">{p}</span>
             </li>
           ))}

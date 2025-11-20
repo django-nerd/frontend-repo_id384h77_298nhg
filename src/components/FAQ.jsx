@@ -16,7 +16,7 @@ export default function FAQ() {
             <details key={f.q} className="group open:bg-white/5">
               <summary className="cursor-pointer list-none px-6 py-4 text-white font-medium flex items-center justify-between">
                 {f.q}
-                <span className="ml-4 text-slate-300 group-open:rotate-45 transition-transform">＋</span>
+                <span className="ml-4 text-slate-300 group-open:rotate-45 transition-transform" aria-hidden>+</span>
               </summary>
               <div className="px-6 pb-4 text-slate-300">{f.a}</div>
             </details>
